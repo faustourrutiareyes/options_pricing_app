@@ -2,5 +2,4 @@ numpy
 matplotlib
 yfinance
 scipy
-uvicorn
 shiny

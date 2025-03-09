@@ -5,7 +5,6 @@ from ticker_util import ticker_info_call
 from price_simulators import black_scholes, simulate_stock_paths
 from plotter import simulations_plot
 
-import uvicorn
 
 app_ui = ui.page_sidebar(
     ui.sidebar(
@@ -109,6 +108,3 @@ def server(input, output, session):
 
 
 app = App(app_ui, server)
-
-if __name__ == "__main__":
-    uvicorn.run("app:app")
